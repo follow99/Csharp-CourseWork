@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA1_MVC1", "CA1_MVC1\CA1_MVC1.csproj", "{8B781071-BF65-4041-95FD-BDC8DA23F205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA1_MVC1.Tests", "CA1_MVC1.Tests\CA1_MVC1.Tests.csproj", "{B1F4B253-6295-410C-AA5E-DA7E3D7A5C16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B781071-BF65-4041-95FD-BDC8DA23F205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B781071-BF65-4041-95FD-BDC8DA23F205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B781071-BF65-4041-95FD-BDC8DA23F205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B781071-BF65-4041-95FD-BDC8DA23F205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F4B253-6295-410C-AA5E-DA7E3D7A5C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F4B253-6295-410C-AA5E-DA7E3D7A5C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F4B253-6295-410C-AA5E-DA7E3D7A5C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F4B253-6295-410C-AA5E-DA7E3D7A5C16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://davidhusse2016.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CA1_MVC1.Tests\\CA1_MVC1.Tests.csproj
+		SccProjectName1 = CA1_MVC1.Tests
+		SccLocalPath1 = CA1_MVC1.Tests
+		SccProjectUniqueName2 = CA1_MVC1\\CA1_MVC1.csproj
+		SccProjectName2 = CA1_MVC1
+		SccLocalPath2 = CA1_MVC1
+	EndGlobalSection
+EndGlobal

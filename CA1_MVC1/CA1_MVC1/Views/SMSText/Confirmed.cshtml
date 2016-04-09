@@ -1,0 +1,19 @@
+﻿@model CA1_MVC1.Models.SMSText
+
+@{
+    ViewBag.Title = "Confirmed";
+}
+
+<h2>Confirmed</h2>
+
+<h4>your message has send sucessed!!</h4>
+<p> Your message has send sucessed</p>
+<p>
+    The numbers:<b>@Html.DisplayFor(m => m.AreaCodeSmS)-@Html.DisplayFor(m => m.PhoneNumberSmS)</b>
+</p>
+<p> The Content is:<b>@Html.DisplayFor(m => m.TextContentSmS)</b></p>
+
+
+<div>
+    @Html.ActionLink("Send another ?", "Index")
+</div>

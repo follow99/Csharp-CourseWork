@@ -1,0 +1,60 @@
+﻿@using CA1_MVC1.Models
+@model IEnumerable<CA1_MVC1.Models.ContactList>
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h2>ContactList</h2>
+
+<p>
+    @Html.ActionLink("To Index", "Index", "SMSText")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AreaCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ForeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SurName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AreaCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ForeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurName)
+            </td>
+            <td>
+                
+                @Html.ActionLink("Send TEXT",
+                    "Index",
+                    "SMSText"
+                    , new {id = item.Id}
+                    //new { areaCodeSmS = item.AreaCode, phoneNumberSmS = item.PhoneNumber }// //pass areaCode,Phonenumber without db;  
+                    , new { @class = "btn btn-primary btn-large" })
+
+
+            </td>
+        </tr>
+
+    }
+
+</table>

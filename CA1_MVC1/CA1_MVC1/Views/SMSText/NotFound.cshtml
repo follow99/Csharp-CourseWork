@@ -1,0 +1,24 @@
+﻿@model CA1_MVC1.Models.SMSText
+
+@{
+    ViewBag.Title = "NotFound";
+}
+
+<h2>Not Found</h2>
+
+<h4>your message hasn't send </h4>
+<p> The Contact number not Found in ContactList</p>
+<p>
+    The numbers:<b>@Html.DisplayFor(m => m.AreaCodeSmS)-@Html.DisplayFor(m => m.PhoneNumberSmS)</b>
+</p>
+<p> The Content is:<b>@Html.DisplayFor(m => m.TextContentSmS)</b></p>
+
+
+<div>
+    @Html.ActionLink("Wanna check the contactList", "Index", "ContactList")<br/>
+    OR<br/>
+    @Html.ActionLink("Wanna Resend?", "Index")
+
+
+</div>
+
